@@ -22,7 +22,7 @@ class Scoreboard(Turtle):
     def reset(self):
         if self.score>self.high_score:
             self.high_score=self.score
-            with open("A:\project\Snake Game\data.txt", mode="w") as data:
+            with open("/workspaces/snake-game/data.txt", mode="w") as data:
                 data.write(f"{self.high_score}")    
 
         self.score=0 
